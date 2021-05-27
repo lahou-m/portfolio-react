@@ -6,13 +6,15 @@ import './styles/Header.css'
 
 const Navbar = () => {
     const [isOpen, setOpen] = useState(false);
-    const isMobile = useMediaQuery({ maxWidth: 850 });
-    const isNotMobile = useMediaQuery({ minWidth: 851 });
+    const isMobile = useMediaQuery({ maxWidth: 950 });
+    const isNotMobile = useMediaQuery({ minWidth: 951 });
 
     
     return (
         <div className='navbar__container'>
-            <h1><span className='violet'>S</span>parkling <span className='violet'>D</span>ev</h1>
+            <Link to="/">
+                <h1><span className='violet'>S</span>parkling <span className='violet'>D</span>ev</h1>
+            </Link>
             {
                     isMobile && 
                     <>
@@ -21,27 +23,32 @@ const Navbar = () => {
                         <div className='mobileNavbar__links'>
                         {isOpen && 
                             <ul>
-                            <li>
+                                <li>
                                 <Link to='/'>
-                                    About
+                                    Home
                                 </Link>
-                            </li>
-                            <li>
-                                <Link to='/services'>
-                                    Services
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to='/projects'>
-                                    Projects
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className='outline' to='/contact'>
-                                    Contact
-                                </Link>
-                            </li>
-                        </ul>
+                                </li>
+                                <li>
+                                    <Link to='/about'>
+                                        About
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/services'>
+                                        Services
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/projects'>
+                                        Projects
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className='outline' to='/contact'>
+                                        Contact
+                                    </Link>
+                                </li>
+                            </ul>
                         }
                         </div>
                     </>
@@ -52,21 +59,26 @@ const Navbar = () => {
                     <ul>
                         <li>
                             <Link to='/'>
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/about'>
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link to='/'>
+                            <Link to='/services'>
                                 Services
                             </Link>
                         </li>
                         <li>
-                            <Link to='/'>
+                            <Link to='/projects'>
                                 Projects
                             </Link>
                         </li>
                         <li>
-                            <Link className='outline' to='/'>
+                            <Link className='outline' to='/contact'>
                                 Contact
                             </Link>
                         </li>

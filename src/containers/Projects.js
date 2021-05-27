@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Header from '../components/Header';
+import './styles/Projects.css'
 
 const Projects = () => {
     return (
-        <div>
+        <>
+        <Header />
+        <div className="header__container">
             
         </div>
+        </>
     )
 }
 
