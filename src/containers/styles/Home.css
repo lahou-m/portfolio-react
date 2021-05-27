@@ -1,0 +1,21 @@
+.main__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5rem;
+  margin-top: 50px;
+}
+
+.main__text {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.main__text h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.main__svg {
+}
