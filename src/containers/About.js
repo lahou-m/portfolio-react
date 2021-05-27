@@ -13,9 +13,9 @@ const About = () => {
             </div>
             <div className="about__text">
                 <h1>
-                    Hi, My name is moustafa Im a self-taught web developer and
-                    I love coding websites! this is logic, creative & funny.
-              </h1>
+                    Hi, My name is moustafa Im a self-taught web developer.
+                    I love coding !! creating websites is a real passion, I like the side creative & logic.
+                </h1>
             </div>
         </div>
         </>

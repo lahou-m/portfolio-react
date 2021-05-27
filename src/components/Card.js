@@ -11,7 +11,7 @@ const Card = (props) => {
                 <p>{props.desc}</p>
             </div>
             <div className="card__skills">
-                <p>Some of my skill & tools for the {props.title}: </p>
+                <p>my skills & tools for the {props.title}: </p>
                 <div className="card__skillsIcon">
                     {props.children}
                 </div>
