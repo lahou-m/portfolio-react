@@ -1,21 +1,44 @@
 .services__container {
   display: flex;
-  height: calc(100vh - 60px);
   justify-content: space-evenly;
-  padding: 5rem;
-  background-image: repeating-linear-gradient(
-      45deg,
-      rgb(255, 255, 255) 0px,
-      rgb(255, 255, 255) 10px,
-      transparent 10px,
-      transparent 11px
-    ),
-    repeating-linear-gradient(
-      135deg,
-      rgb(255, 255, 255) 0px,
-      rgb(255, 255, 255) 10px,
-      transparent 10px,
-      transparent 11px
-    ),
-    linear-gradient(90deg, hsl(256, 7%, 84%), hsl(256, 7%, 84%));
+  flex-wrap: wrap;
+  padding: 2rem 5rem 0;
+  height: calc(100vh - 60px);
+}
+
+.services__container > div > h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.stepCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  border-radius: 3px;
+  transition: all 400ms;
+  background: #fff;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  padding: 1rem;
+}
+.stepCard h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 7px;
+}
+
+.stepCard p {
+  font-size: 1.1rem;
+}
+
+.services__container .card__container:first-of-type:hover {
+  box-shadow: #b372fda6 0px 4px 12px -1px, #b372fda6 0px 2px 12px -1px;
+}
+
+.services__container .card__container:not(:first-of-type):hover {
+  box-shadow: #ffca6fa6 0px 4px 12px -1px, #ffca6fa6 0px 2px 12px -1px;
 }

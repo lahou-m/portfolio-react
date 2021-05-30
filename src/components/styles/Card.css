@@ -1,13 +1,17 @@
 .card__container {
   max-width: 400px;
-  min-width: 200px;
+  min-width: 350px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   padding: 1rem;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   transition: all 400ms;
   background: #fff;
+  overflow: hidden;
+  margin-bottom: 15px;
+  height: fit-content;
 }
 
 .card__container:hover {
@@ -20,17 +24,26 @@
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
-
-.card__desc {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  font-weight: 600;
-  text-align: center;
-}
-
 .card__skills p {
   font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .card__skillsIcon {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.card__skillsIcon .inline {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.card__skillsIcon img {
+  width: auto;
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }

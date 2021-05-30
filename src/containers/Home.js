@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import codejs from '../assets/codejs.svg';
+import hero from '../assets/hero.svg';
 import './styles/Home.css';
 
 const Home = () => {
@@ -37,7 +37,7 @@ const Home = () => {
                 
             </div>
             <div className="main__svg">
-                <img src={codejs} alt="example ide code" width="500px" height="auto"/>
+                <img src={hero} alt="example ide code"/>
             </div>
         </div>
         </>

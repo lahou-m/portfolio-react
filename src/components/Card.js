@@ -7,11 +7,7 @@ const Card = (props) => {
             <div className="card__tile" style={{...props.titleStyle}}>
                 <h1>{props.title}</h1>
             </div>
-            <div className="card__desc">
-                <p>{props.desc}</p>
-            </div>
             <div className="card__skills">
-                <p>my skills & tools for the {props.title}: </p>
                 <div className="card__skillsIcon">
                     {props.children}
                 </div>
