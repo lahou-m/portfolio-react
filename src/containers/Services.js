@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../components/Card';
 import Header from '../components/Header';
 import './styles/Services.css';
-import {frontData, backData} from '../data/Data';
+import data from '../data/Data';
 import design from '../assets/design.png';
 import development from '../assets/development.png';
 import hoisting from '../assets/hoisting.png';
@@ -16,7 +16,7 @@ const Services = () => {
             <div style={{display:'flex', flexDirection: 'column', justifyContent: "center"}}>
                 <h1>Skills</h1>
                 <Card title="Front-End"  titleStyle={{background: 'rgb(214,225,255)', background: "linear-gradient(90deg, rgba(214,225,255,1) 0%, rgba(179,114,253,1) 100%)"}} >
-                    {frontData.map((service) => {
+                    {data.frontSkills.map((service) => {
                         return (
                             <div className="inline">
                             <img src={service.img} alt="" key={service.id}  />
@@ -26,7 +26,7 @@ const Services = () => {
                     })}
                 </Card>
                 <Card title="Back-End" titleStyle={{background: "rgb(255,177,196)", background: 'linear-gradient(90deg, rgba(255,177,196,1) 0%, rgba(255,203,111,1) 100%)' }} >
-                    {backData.map((service) => {
+                    {data.backSkills.map((service) => {
                         return (
                             <div className="inline">
                             <img src={service.img} alt="" key={service.id}  />
@@ -51,7 +51,7 @@ const Services = () => {
                 <div className="stepCard">
                     <img src={hoisting} alt="" />
                     <h2>Deployment</h2>
-                    <p>the last stage,I take care of the domain name registration and the hoisting</p>
+                    <p>the last stage,I take care of the domain name registration and the hosting</p>
                 </div>
             </div>
             

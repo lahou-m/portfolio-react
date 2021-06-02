@@ -11,6 +11,7 @@
   font-size: 2rem;
   font-weight: 500;
   color: #333;
+  font-family: "Pacifico", sans-serif;
 }
 
 .navbar__container .violet {
@@ -66,7 +67,7 @@
 .navbar__links .outline {
   color: #635bff;
   border: 1px solid #635bff;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .navbar__links .outline:hover {

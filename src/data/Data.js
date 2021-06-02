@@ -1,4 +1,5 @@
-const frontData = [
+const data = {
+  frontSkills: [
     {
       id: 1,
       name: "Html",
@@ -34,9 +35,9 @@ const frontData = [
       name: "Visual Studio Code",
       img: "./assets/icon/vsc.png",
     },
-  ];
 
-const backData = [
+  ],
+  backSkills: [
     {
       id: 9,
       name: "Php",
@@ -72,54 +73,80 @@ const backData = [
       name: "Wordpress",
       img: "./assets/icon/wordpress.png",
     }
+  ],
+  projects: [
+    {
+      id: 1,
+      title: "FlipKart Ecommerce",
+      img: "./assets/flipk.png",
+      desc: "Complete ecommerce & Admin panel with full management (Category, product, user ,order ... )",
+      techs: [
+        "./assets/icon/react.png",
+        "./assets/icon/redux.png",
+        "./assets/icon/bootstrap.png",
+        "./assets/icon/nodejs.png",
+        "./assets/icon/mongodb.png",
+        "./assets/icon/postman.png",
+      ],
+      demoLink: "",
+      githubLink: "",
+    },
+    {
+      id: 2,
+      title: "Honey's Garden",
+      img: "./assets/honeygarden.png",
+      desc: "CRUD Application as an ecommerce with admin panel",
+      techs: [
+        "./assets/icon/html.png",
+        "./assets/icon/css.png",
+        "./assets/icon/javascript.png",
+        "./assets/icon/php.png",
+        "./assets/icon/mysql.png",
+      ],
+      demoLink: "",
+      githubLink: "",
+    },
+    {
+      id: 3,
+      title: "Sublime Coffee",
+      img: "./assets/sublimecoffee.png",
+      desc: "Basic blog with user authentication to acceess section",
+      techs: [
+        "./assets/icon/html.png",
+        "./assets/icon/css.png",
+        "./assets/icon/javascript.png",
+        "./assets/icon/php.png",
+        "./assets/icon/mysql.png",
+      ],
+      demoLink: "",
+      githubLink: "",
+    },
+    {
+      id: 4,
+      title: "CoolHost",
+      img: "./assets/coolhost.png",
+      desc: "Landing page Training for web host ",
+      techs: [
+        "./assets/icon/html.png",
+        "./assets/icon/css.png",
+        "./assets/icon/javascript.png",
+      ],
+      demoLink: "",
+      githubLink: "",
+    },
+    {
+      id: 5,
+      title: "SUPApp",
+      img: "./assets/supapp.png",
+      desc: "Basic Landing page Training for a mobile application  ",
+      techs: [
+        "./assets/icon/html.png",
+        "./assets/icon/css.png",
+      ],
+      demoLink: "",
+      githubLink: "",
+    },
+]
+};
 
-  ]
-
-export {frontData,
-backData};
-  
-
-
-// export const projectsData = [
-//     {
-//       id: 1,
-//       title: "Casta",
-//       date: "Janvier 2020",
-//       languages: ["React", "Php", "Sass"],
-//       infos:
-//         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-//       img: "./assets/img/projet-2.jpg",
-//       link: "http://www.google.com",
-//     },
-//     {
-//       id: 2,
-//       title: "Lyon Béton",
-//       date: "Mars 2020",
-//       languages: ["Symfony", "Vue"],
-//       infos:
-//         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-//       img: "./assets/img/projet-1.jpg",
-//       link: "http://www.google.com",
-//     },
-//     {
-//       id: 3,
-//       title: "Everpost",
-//       date: "Avril 2020",
-//       languages: ["Wordpress", "Php", "React"],
-//       infos:
-//         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-//       img: "./assets/img/projet-3.jpg",
-//       link: "http://www.google.com",
-//     },
-//     {
-//       id: 4,
-//       title: "Creative Dev",
-//       date: "Juillet 2020",
-//       languages: ["Vue", "Php"],
-//       infos:
-//         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-//       img: "./assets/img/projet-4.jpg",
-//       link: "http://www.google.com",
-//     },
-//   ];
-  
+export default data;

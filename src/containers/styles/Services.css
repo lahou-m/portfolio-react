@@ -3,12 +3,10 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 2rem 5rem 0;
-  height: calc(100vh - 60px);
 }
 
 .services__container > div > h1 {
   font-size: 1.5rem;
-  font-weight: 500;
   text-decoration: underline;
   text-align: center;
   margin-bottom: 10px;

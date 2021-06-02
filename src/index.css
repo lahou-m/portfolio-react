@@ -1,6 +1,5 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 html,
 body,
 p,
@@ -83,7 +82,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(246 252 254);
 }
 
 code {
