@@ -2,14 +2,14 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 2rem 5rem 0;
+  padding: 3rem 10rem 0;
 }
 
 .services__container > div > h1 {
   font-size: 1.5rem;
-  text-decoration: underline;
   text-align: center;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .stepCard {

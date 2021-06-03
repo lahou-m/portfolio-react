@@ -6,10 +6,13 @@ import './styles/Contact.css';
 
 const Contact = () => {
 
+    const mailSvg = <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#635bff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="3" y="5" width="18" height="14" rx="2" /><polyline points="3 7 12 13 21 7" /></svg>;
+    const addressSvg = <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#635bff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="11" r="3" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
+
+
     init("user_Lm2BviR0m0cjGQ1DP4T4X");
 
     const [name, setName] = useState("");
-    const [company, setCompany] = useState("");
     const [subject, setSubject] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -29,7 +32,7 @@ const Contact = () => {
     }
 
     const failMessage = (msg) => {
-        let formMsg = document.querySelector('.form-message');
+        let formMsg = document.querySelector('.contact__formMessage');
 
         formMsg.innerHTML = msg;
         formMsg.style.opacity = "1";
@@ -41,7 +44,7 @@ const Contact = () => {
     }
 
     const successMessage = () => {
-        let formMsg = document.querySelector('.form-message');
+        let formMsg = document.querySelector('.contact__formMessage');
         
         formMsg.innerHTML = "Your Message has been sent. thank You !";
         formMsg.style.opacity = "1";
@@ -63,7 +66,6 @@ const Contact = () => {
     if(isEmail() && name && message){
         sendFeedback("template_pgjk74h", {
             name,
-            company,
             subject,
             email,
             message,
@@ -80,7 +82,6 @@ const Contact = () => {
       .then((res) => {
         successMessage();
         setName("");
-        setCompany("");
         setSubject("");
         setEmail("");
         setMessage("");
@@ -94,8 +95,8 @@ const Contact = () => {
         <>
         <Header />
         <div className="contact__container">
-            <form className="contact-form">
-                <div className="form-content">
+            <form className="contact__form">
+                <div className="contact__formContent">
                     <input
                     type="text"
                     id="name"
@@ -105,24 +106,8 @@ const Contact = () => {
                     value={name}
                     autoComplete="off"
                     />
-                    <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    onChange={(e) => setCompany(e.target.value)}
-                    placeholder="Company"
-                    value={company}
-                    />
-                    <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    onChange={(e) => setSubject(e.target.value)}
-                    placeholder="Phone-number"
-                    value={subject}
-                    />
-                    <div className="email-content">
-                        <label id="not-email">Email non valide</label>
+                    <div className="contact__emailContent">
+                        <label id="not-email">invalid Email</label>
                         <input
                             type="mail"
                             id="email"
@@ -133,6 +118,14 @@ const Contact = () => {
                             autoComplete="off"
                         />
                     </div>
+                    <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    onChange={(e) => setSubject(e.target.value)}
+                    placeholder="Subject (optional)"
+                    value={subject}
+                    />
                     <textarea
                     id="message"
                     name="message"
@@ -142,13 +135,26 @@ const Contact = () => {
                     />
                 </div>
                 <input
-                    className="button"
+                    className="contact__button"
                     type="button"
-                    value="Envoyer"
+                    value="Submit"
                     onClick={handleSubmit}
                 />
-                <div className="form-message"></div>
+                <div className="contact__formMessage"></div>
             </form>
+            <div className="contact__info">
+                <h1>Any question, request or suggestion will be very appreciated </h1>
+                <div style={{display: 'flex', alignItems: "center", marginBottom: '15px'}}>
+                    <a href="">{mailSvg}</a>
+                    <p style={{marginLeft:'10px'}}>Sparklingdev@gmail.com
+                    </p>
+                </div>
+                <div style={{display: 'flex', alignItems: "center"}}>
+                    <a href="">{addressSvg}</a>
+                    <p style={{marginLeft:'10px'}}>Dubai, United Arab Emirates
+                    </p>
+                </div>
+            </div>
         </div>
         </>
     )
