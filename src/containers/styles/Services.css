@@ -3,6 +3,17 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 3rem 10rem 0;
+  background: url(../../assets/scene.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services__container > h1 {
+  width: 100%;
+  font-size: 3rem !important;
+  font-family: "Pacifico", sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .services__container > div > h1 {

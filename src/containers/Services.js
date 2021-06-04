@@ -13,8 +13,8 @@ const Services = () => {
         <>
         <Header />
         <div className="services__container">
+            <h1>My Services</h1>
             <div style={{display:'flex', flexDirection: 'column', justifyContent: "center"}}>
-                <h1>Skills</h1>
                 <Card title="Front-End"  titleStyle={{background: 'rgb(214,225,255)', background: "linear-gradient(90deg, rgba(214,225,255,1) 0%, rgba(179,114,253,1) 100%)"}} >
                     {data.frontSkills.map((service) => {
                         return (
@@ -37,7 +37,6 @@ const Services = () => {
                 </Card>
             </div>
             <div style={{display:'flex', flexDirection: 'column', justifyContent: "center"}}>
-                <h1>Services</h1>
                 <div className="stepCard">
                     <img src={design} alt="" />
                     <h2>Design</h2>

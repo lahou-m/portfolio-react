@@ -5,3 +5,9 @@
   justify-content: center;
   padding: 3rem 10rem 0rem;
 }
+
+.projects__container > h1 {
+  font-size: 3rem !important;
+  font-family: "Pacifico", sans-serif;
+  margin-bottom: 2rem;
+}

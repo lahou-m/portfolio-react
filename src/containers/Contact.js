@@ -95,6 +95,7 @@ const Contact = () => {
         <>
         <Header />
         <div className="contact__container">
+            <h1>Contact</h1>
             <form className="contact__form">
                 <div className="contact__formContent">
                     <input
@@ -146,7 +147,7 @@ const Contact = () => {
                 <h1>Any question, request or suggestion will be very appreciated </h1>
                 <div style={{display: 'flex', alignItems: "center", marginBottom: '15px'}}>
                     <a href="">{mailSvg}</a>
-                    <p style={{marginLeft:'10px'}}>Sparklingdev@gmail.com
+                    <p style={{marginLeft:'10px'}}>Lm.sparklingdev@gmail.com
                     </p>
                 </div>
                 <div style={{display: 'flex', alignItems: "center"}}>
@@ -154,6 +155,7 @@ const Contact = () => {
                     <p style={{marginLeft:'10px'}}>Dubai, United Arab Emirates
                     </p>
                 </div>
+                <img src="./assets/hero.svg" alt="" />
             </div>
         </div>
         </>
