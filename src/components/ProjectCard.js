@@ -1,9 +1,13 @@
 import React from 'react';
 import './styles/ProjectCard.css';
 
+import { motion } from 'framer-motion';
+import { animationFour, transition } from '../animation/FramerAnimations';
+
 const ProjectCard = (props) => {
+    
     return (
-        <div className="projectCard__container">
+        <motion.div initial='out' animate='in' exit='end' variants={animationFour} transition={transition} className="projectCard__container">
             <div className="projectCard__mockup">
                 <img src={props.img} alt="" />
             </div>
@@ -16,7 +20,7 @@ const ProjectCard = (props) => {
                 <a href="">Live Demo</a>
                 <a href="">View Source</a>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

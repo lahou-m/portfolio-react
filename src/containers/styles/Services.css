@@ -1,19 +1,22 @@
 .services__container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  display: grid;
   padding: 3rem 10rem 0;
   background: url(../../assets/scene.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .services__container > h1 {
-  width: 100%;
   font-size: 3rem !important;
   font-family: "Pacifico", sans-serif;
   text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
   margin-bottom: 2rem;
+  color: #333;
 }
 
 .services__container > div > h1 {
@@ -27,12 +30,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px;
+  margin: 20px 40px;
   border-radius: 3px;
   transition: all 400ms;
   background: #fff;
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
   padding: 1rem;
+  min-width: 300px;
 }
 .stepCard h2 {
   font-size: 1.3rem;
@@ -42,6 +46,7 @@
 
 .stepCard p {
   font-size: 1.1rem;
+  text-align: center;
 }
 
 .services__container .card__container:first-of-type:hover {
@@ -50,4 +55,37 @@
 
 .services__container .card__container:not(:first-of-type):hover {
   box-shadow: #ffca6fa6 0px 4px 12px -1px, #ffca6fa6 0px 2px 12px -1px;
+}
+
+@media screen and (max-width: 950px) {
+  .services__container {
+    padding: 2rem;
+  }
+
+  .services__container > h1 {
+    grid-column-end: auto;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .stepCard {
+    margin: 20px 5px;
+  }
+
+  .card__container {
+    margin: 15px 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .services__container > h1 {
+    font-size: 2rem !important;
+    grid-column-end: auto;
+    margin-bottom: 1rem;
+  }
+
+  .card__container {
+    margin: 15px 5px;
+    min-width: 200px;
+  }
 }

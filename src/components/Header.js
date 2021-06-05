@@ -2,25 +2,26 @@ import React, { useState } from 'react';
 import { Link} from 'react-router-dom';
 import { MenuToggle } from './MenuToggle';
 import { useMediaQuery } from "react-responsive";
-import './styles/Header.css'
+import './styles/Header.css';
+import Toggle from './Toggle';
 
 const Navbar = () => {
     const [isOpen, setOpen] = useState(false);
     const isMobile = useMediaQuery({ maxWidth: 950 });
-    const isNotMobile = useMediaQuery({ minWidth: 951 });
 
     
     return (
         <div className='navbar__container'>
             <Link to="/">
-                <h1><span className='violet'>S</span>parkling <span className='violet'>D</span>ev</h1>
+                <h1 style={{display: "flex"}}><span className='violet'>S</span>parkling <span className='violet'>D</span>ev</h1>
             </Link>
+            <Toggle />
             {
                     isMobile && 
                     <>
                         
                         <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
-                        <div className='mobileNavbar__links'>
+                        <div style={{zIndex: 99}} className='mobileNavbar__links'>
                         {isOpen && 
                             <ul>
                                 <li>
@@ -49,8 +50,8 @@ const Navbar = () => {
                     </>
                     
             }
-            {   isNotMobile &&
-                <div className='navbar__links'> 
+            {   !isMobile &&
+                <div style={{zIndex: 99}} className='navbar__links'> 
                     <ul>
                         <li>
                             <Link to='/'>

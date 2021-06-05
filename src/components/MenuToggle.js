@@ -15,7 +15,7 @@ const transition = { duration: 0.25 };
 
 export function MenuToggle({ toggle, isOpen }) {
   return (
-    <button style={{cursor: 'pointer', background: "rgb(246 252 254)", border: "none"}} onClick={toggle}>
+    <button style={{cursor: 'pointer', background: "#fff", border: "none"}} onClick={toggle}>
       <svg width="30" height="30" viewBox="0 0 23 23">
         <Path
           animate={isOpen ? "open" : "closed"}

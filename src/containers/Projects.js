@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import './styles/Projects.css';
 import data from '../data/Data';
 import ProjectCard from '../components/ProjectCard';
+import { animationFour, transition } from '../animation/FramerAnimations';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
 
@@ -12,7 +14,7 @@ const Projects = () => {
         <>
         <Header />
         <div className="projects__container">
-            <h1>My Projects</h1>
+            <motion.h1  exit='end' variants={animationFour} transition={transition} >My Projects</motion.h1>
             {
                 projects.map((project) => {
                     return (<ProjectCard title={project.title} img={project.img} desc={project.desc}>

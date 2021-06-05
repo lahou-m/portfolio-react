@@ -35,43 +35,53 @@ const data = {
       name: "Visual Studio Code",
       img: "./assets/icon/vsc.png",
     },
+    {
+      id: 8,
+      name: "Figma",
+      img: "./assets/icon/figma.png",
+    },
 
   ],
   backSkills: [
     {
-      id: 9,
+      id: 1,
       name: "Php",
       img: "./assets/icon/php.png",
     },
     {
-      id: 10,
+      id: 2,
       name: "Node Js",
       img: "./assets/icon/nodejs.png",
     },
     {
-      id: 11,
+      id: 3,
       name: "Mysql",
       img: "./assets/icon/mysql.png",
     },
     {
-      id: 12,
+      id: 4,
       name: "MongoDb",
       img: "./assets/icon/mongodb.png",
     },
     {
-      id: 13,
+      id: 5,
       name: "Postman",
       img: "./assets/icon/postman.png",
     },
     {
-      id: 8,
+      id: 6,
       name: "Git & Github",
       img: "./assets/icon/github.png",
     },
     {
-      id:9,
+      id: 7,
       name: "Wordpress",
       img: "./assets/icon/wordpress.png",
+    },
+    {
+      id: 8,
+      name: "Git",
+      img: "./assets/icon/git.png",
     }
   ],
   projects: [

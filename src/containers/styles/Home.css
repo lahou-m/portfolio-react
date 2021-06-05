@@ -1,9 +1,7 @@
 .main__container {
   display: flex;
-  flex: 1;
   height: calc(100vh - 60px);
-  width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 5rem;
 }
@@ -11,7 +9,7 @@
 .main__text {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 30px;
 }
 
 .main__text h1 {
@@ -19,15 +17,8 @@
   font-size: 2.5rem;
   font-weight: 800;
   text-align: center;
-  /* font-family: "Faster One", cursive; */
 }
 
-.main__actions {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 20px;
-}
 .main__actions a:first-of-type {
   cursor: pointer;
   color: #fff;
@@ -37,6 +28,13 @@
   padding: 5px 15px;
   font-size: 2rem;
   transition: all 200ms;
+}
+
+.main__actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .main__actions a:first-of-type:hover {
@@ -60,13 +58,62 @@
 }
 
 .main__svg {
-  margin: auto;
-  min-height: 300px;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  min-width: 300px;
 }
 
-.main__svg {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  min-width: 400px;
+/* Mobile */
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+  .main__text h1 {
+    font-size: 2rem;
+  }
+  .main__container {
+    padding: 2rem;
+  }
+
+  .main__actions a:first-of-type {
+    font-size: 1.2rem;
+  }
+
+  .main__actions a:not(:first-of-type) {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .main__container {
+    flex-direction: column;
+  }
+
+  .main__container {
+    padding: 2rem;
+    justify-content: flex-start;
+  }
+
+  .main__text h1 {
+    font-size: 2.2rem;
+  }
+
+  .main__actions a:first-of-type {
+    font-size: 1.2rem;
+  }
+
+  .main__actions a:not(:first-of-type) {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main__text h1 {
+    font-size: 1.5em;
+  }
+
+  .main__container {
+    padding: 1rem;
+  }
 }

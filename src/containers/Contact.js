@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import './styles/Contact.css';
+import { motion } from 'framer-motion';
+import { animationFive, transition } from '../animation/FramerAnimations';
 
 const Contact = () => {
 
@@ -94,7 +96,7 @@ const Contact = () => {
     return (
         <>
         <Header />
-        <div className="contact__container">
+        <motion.div initial='out' animate='in' exit='out' variants={animationFive} transition={transition} className="contact__container">
             <h1>Contact</h1>
             <form className="contact__form">
                 <div className="contact__formContent">
@@ -157,7 +159,7 @@ const Contact = () => {
                 </div>
                 <img src="./assets/hero.svg" alt="" />
             </div>
-        </div>
+        </motion.div>
         </>
     )
 }

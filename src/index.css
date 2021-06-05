@@ -45,6 +45,7 @@ select {
 }
 html {
   box-sizing: border-box;
+  /* background-color: var(--background); */
 }
 *,
 *::before,
@@ -81,9 +82,28 @@ body {
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.theme-light {
+  --light-text: "#fff";
+  --dark-text: "#333";
+  --background: #fff;
+  /* --dark-background: ; */
+  /* --button-border: ;
+  --accent: ; */
+}
+
+.theme-dark {
+  --light-text: "#ffffff";
+  --dark-text: "#333333";
+  --background: #2f2f4f;
+  /* --dark-background: ; */
+  /* --button-border: ;
+  --accent: ; */
 }
