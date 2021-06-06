@@ -9,7 +9,7 @@
 .main__text {
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  margin: 3rem;
 }
 
 .main__text h1 {
@@ -95,7 +95,7 @@
   }
 
   .main__text h1 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 
   .main__actions a:first-of-type {

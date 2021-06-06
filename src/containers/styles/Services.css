@@ -88,4 +88,8 @@
     margin: 15px 5px;
     min-width: 200px;
   }
+
+  .card__skillsIcon img {
+    height: 35px !important;
+  }
 }

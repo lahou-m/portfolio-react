@@ -48,7 +48,7 @@
 .container--toggle {
   display: grid;
   place-items: center;
-  min-height: 60px;
+  min-height: 40px;
   position: relative;
   grid-area: toggle;
   margin: 20px;
@@ -56,8 +56,8 @@
 
 /* background */
 .toggle--label {
-  width: 100px;
-  height: 54px;
+  width: 90px;
+  height: 40px;
   background: var(--indigo-color);
   border-radius: 100px;
   border: 3px solid var(--indigo-border);
@@ -86,8 +86,8 @@
   animation-duration: 350ms;
   animation-fill-mode: forwards;
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 30px !important;
+  height: 30px;
   border: 3px solid var(--gray-border);
   top: 1px;
   left: 3px;
@@ -145,8 +145,8 @@
   background: white;
   left: 32px;
   width: 4px;
-  transition: all 150ms ease-in;
-  top: 25px;
+  transition: all 350ms ease-in-out;
+  top: 18px;
   height: 4px;
 }
 
