@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.4b5dab10.chunk.css",
+    "main.css": "/portfolio-react/static/css/main.5a472315.chunk.css",
     "main.js": "/portfolio-react/static/js/main.aa9e9195.chunk.js",
     "main.js.map": "/portfolio-react/static/js/main.aa9e9195.chunk.js.map",
     "runtime-main.js": "/portfolio-react/static/js/runtime-main.bbf07953.js",
@@ -12,7 +12,7 @@
     "static/js/3.94a01397.chunk.js.map": "/portfolio-react/static/js/3.94a01397.chunk.js.map",
     "index.html": "/portfolio-react/index.html",
     "static/css/2.50c708d6.chunk.css.map": "/portfolio-react/static/css/2.50c708d6.chunk.css.map",
-    "static/css/main.4b5dab10.chunk.css.map": "/portfolio-react/static/css/main.4b5dab10.chunk.css.map",
+    "static/css/main.5a472315.chunk.css.map": "/portfolio-react/static/css/main.5a472315.chunk.css.map",
     "static/js/2.38cb1df3.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.38cb1df3.chunk.js.LICENSE.txt",
     "static/media/hero.a5ece732.svg": "/portfolio-react/static/media/hero.a5ece732.svg",
     "static/media/Services.css": "/portfolio-react/static/media/scene.561ede36.svg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.bbf07953.js",
     "static/css/2.50c708d6.chunk.css",
     "static/js/2.38cb1df3.chunk.js",
-    "static/css/main.4b5dab10.chunk.css",
+    "static/css/main.5a472315.chunk.css",
     "static/js/main.aa9e9195.chunk.js"
   ]
 }
